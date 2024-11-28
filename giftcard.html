@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <div class="logo">
+            <h1>Tote</h1>
+            <p>Funky Printed Bags</p>
+        </div>
+        <nav class="navigation">
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">FAQ</a>
+            <a href="#">Gift Card</a>
+            <a href="#">Contact</a>
+        </nav>
+        
+        <div class="right-menu">
+        
+
+         <div class="search-container">
+            <span class="search-icon">&#128269;</span>
+            <input type="text" placeholder="Search" class="search-input">
+          </div>
+
+         <div class="login">
+            <span class="user-icon">&#128100;</span> 
+            <a href="#">Log In</a>
+          </div>
+
+         <div class="cart">
+            <span class="cart-icon">&#128722;</span>
+            <span class="cart-count">0</span>
+          </div>
+        </div>
+        <input id="checkbox" type="checkbox">
+                <label class="toggle" for="checkbox" onclick="openMenu()">
+                    <div id="bar1" class="bars"></div>
+                    <div id="bar2" class="bars"></div>
+                    <div id="bar3" class="bars"></div>
+                </label>
+        </div>
+
+    </header>
+    <main>
+        <div class="giftcard-content">
+            <div class="picture"><img src="https://static.wixstatic.com/media/84770f_0fd9502fe5834de0990e6a4cca719a38~mv2.jpg/v1/fit/w_484,h_363,q_80,usm_0.66_1.00_0.01,enc_auto/84770f_0fd9502fe5834de0990e6a4cca719a38~mv2.jpg" alt="gift card pic">
+            </div>
+            <div class="info">
+                <h1>eGift Card</h1>
+                <p class="pamount">$25</p>
+                <p>You can't go wrong with a gift card. Choose an amount and
+                    write a personalized message to make this gift your own.</p>
+                <p>Amount</p>
+                <div class="amounts">
+                    <button>$25</button>
+                    <button>$50</button>
+                    <button>$100</button>
+                    <button>$150</button>
+                    <button>$200</button>
+                </div>
+                <p>Quantity</p>
+                <div class="qty">
+                    <button class="qty_btn decrease" disabled>-</button>
+                    <input type="number" name="qty" min="1" max="10" contenteditable="false" disabled="" class="qty_0" value="1">
+                    <button class="qty_btn increase">+</button>
+                </div>
+                <p>Who's the gift card for?</p>
+                <div class="recipient">
+                    <button class="rec">For Someone Else</button>
+                    <button class="rec">For Myself</button>
+                </div>
+                <p>Recipient Email*</p>
+                <input class='inputsmall'type="text">
+               <p> Recipient Name</p>
+               <input class='inputsmall' type="text">
+               <p>Delivery Date</p>
+               <input class='inputsmall dateinput' type="date">
+               <p>Message</p>
+               <input class='inputbig' type="text"> <br>
+               <br>
+                <button class="buybutton">
+                    Buy Now
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
